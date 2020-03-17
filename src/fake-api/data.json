@@ -1,0 +1,219 @@
+{
+  "events": [
+    {
+      "2020-03-10": [
+        {
+          "date": "2020-03-10",
+          "quantity": 2,
+          "price": 20,
+          "eventType": "Expenses",
+          "isExpenseType": true,
+          "isHoursEventType": false,
+          "isAdditionalHoursEventType": false,
+          "isWorkHour": false,
+          "isApproved": true,
+          "isRejected": false,
+          "tasksCount": 1,
+          "firstTaskStart": "2020-03-10",
+          "lastTaskEnd": "2020-03-15"
+        },
+        {
+          "date": "2020-03-10",
+          "quantity": 2,
+          "price": 20,
+          "eventType": "Expenses",
+          "isExpenseType": true,
+          "isHoursEventType": false,
+          "isAdditionalHoursEventType": false,
+          "isWorkHour": false,
+          "isApproved": true,
+          "isRejected": false,
+          "tasksCount": 1,
+          "firstTaskStart": "2020-03-11",
+          "lastTaskEnd": "2020-03-12"
+        }
+      ]
+    },
+    {
+      "2020-03-11": [
+        {
+          "date": "2020-03-11",
+          "quantity": 2,
+          "price": 20,
+          "eventType": "Expenses",
+          "isExpenseType": true,
+          "isHoursEventType": false,
+          "isAdditionalHoursEventType": false,
+          "isWorkHour": false,
+          "isApproved": true,
+          "isRejected": true,
+          "tasksCount": 1,
+          "firstTaskStart": "2020-03-11",
+          "lastTaskEnd": "2020-03-12"
+        }
+      ]
+    },
+    {
+      "2020-03-12": [
+        {
+          "date": "2020-03-11",
+          "quantity": 2,
+          "price": 20,
+          "eventType": "Expenses",
+          "isExpenseType": true,
+          "isHoursEventType": false,
+          "isAdditionalHoursEventType": false,
+          "isWorkHour": false,
+          "isApproved": true,
+          "isRejected": false,
+          "tasksCount": 1,
+          "firstTaskStart": "2020-03-11",
+          "lastTaskEnd": "2020-03-11"
+        },
+        {
+          "date": "2020-03-11",
+          "quantity": 2,
+          "price": 20,
+          "eventType": "Expenses",
+          "isExpenseType": true,
+          "isHoursEventType": false,
+          "isAdditionalHoursEventType": false,
+          "isWorkHour": false,
+          "isApproved": false,
+          "isRejected": false,
+          "tasksCount": 1,
+          "firstTaskStart": "2020-03-11",
+          "lastTaskEnd": "2020-03-16"
+        },
+        {
+          "date": "2020-03-11",
+          "quantity": 2,
+          "price": 20,
+          "eventType": "Expenses",
+          "isExpenseType": true,
+          "isHoursEventType": false,
+          "isAdditionalHoursEventType": false,
+          "isWorkHour": false,
+          "isApproved": true,
+          "isRejected": false,
+          "tasksCount": 1,
+          "firstTaskStart": "2020-03-11",
+          "lastTaskEnd": "2020-03-11"
+        }
+      ]
+    },
+    {
+      "2020-03-14": [
+        {
+          "date": "2020-03-14",
+          "quantity": 2,
+          "price": 20,
+          "eventType": "Hours",
+          "isExpenseType": true,
+          "isHoursEventType": false,
+          "isAdditionalHoursEventType": false,
+          "isWorkHour": false,
+          "isApproved": true,
+          "isRejected": false,
+          "tasksCount": 1,
+          "firstTaskStart": "2020-03-11 09:10",
+          "lastTaskEnd": "2020-03-11 15:10"
+        },
+        {
+          "date": "2020-03-14",
+          "quantity": 2,
+          "price": 20,
+          "eventType": "Expenses",
+          "isExpenseType": true,
+          "isHoursEventType": false,
+          "isAdditionalHoursEventType": false,
+          "isWorkHour": false,
+          "isApproved": true,
+          "isRejected": false,
+          "tasksCount": 1,
+          "firstTaskStart": "2020-03-11",
+          "lastTaskEnd": "2020-03-11"
+        },
+        {
+          "date": "2020-03-14",
+          "quantity": 2,
+          "price": 20,
+          "eventType": "Expenses",
+          "isExpenseType": true,
+          "isHoursEventType": false,
+          "isAdditionalHoursEventType": false,
+          "isWorkHour": false,
+          "isApproved": false,
+          "isRejected": true,
+          "tasksCount": 1,
+          "firstTaskStart": "2020-03-11 9:00",
+          "lastTaskEnd": "2020-03-11 15:20"
+        }
+      ]
+    },
+    {
+      "2020-03-17": [
+        {
+          "date": "2020-03-17",
+          "quantity": 2,
+          "price": 20,
+          "eventType": "Hours",
+          "isExpenseType": true,
+          "isHoursEventType": false,
+          "isAdditionalHoursEventType": false,
+          "isWorkHour": false,
+          "isApproved": true,
+          "isRejected": false,
+          "tasksCount": 1,
+          "firstTaskStart": "2020-03-17 12:00",
+          "lastTaskEnd": "2020-03-17 14:00"
+        },
+        {
+          "date": "2020-03-17",
+          "quantity": 2,
+          "price": 20,
+          "eventType": "Hours",
+          "isExpenseType": true,
+          "isHoursEventType": false,
+          "isAdditionalHoursEventType": false,
+          "isWorkHour": false,
+          "isApproved": true,
+          "isRejected": false,
+          "tasksCount": 1,
+          "firstTaskStart": "2020-03-17 10:00",
+          "lastTaskEnd": "2020-03-17 18:00"
+        },
+        {
+          "date": "2020-03-17",
+          "quantity": 2,
+          "price": 20,
+          "eventType": "Additional hours",
+          "isExpenseType": true,
+          "isHoursEventType": false,
+          "isAdditionalHoursEventType": false,
+          "isWorkHour": false,
+          "isApproved": true,
+          "isRejected": false,
+          "tasksCount": 1,
+          "firstTaskStart": "2020-03-17",
+          "lastTaskEnd": "2020-03-17"
+        },
+        {
+          "date": "2020-03-17",
+          "quantity": 2,
+          "price": 20,
+          "eventType": "Additional hours",
+          "isExpenseType": true,
+          "isHoursEventType": false,
+          "isAdditionalHoursEventType": false,
+          "isWorkHour": false,
+          "isApproved": true,
+          "isRejected": false,
+          "tasksCount": 1,
+          "firstTaskStart": "2020-03-17 20:05",
+          "lastTaskEnd": "2020-03-17 22:15"
+        }
+      ]
+    }
+  ]
+}

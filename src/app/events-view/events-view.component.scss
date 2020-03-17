@@ -1,0 +1,57 @@
+.mat-card {
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 48px;
+  .mat-card-header {
+    background-color: #f3f3f5;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+
+    .mat-card-header-text {
+      display: flex;
+    }
+    .mat-card-title {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    mat-icon {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    span {
+      display: block;
+      margin-left: auto;
+    }
+  }
+  .mat-card-content {
+    mat-table {
+      width: 100%;
+      mat-row,
+      mat-header-row {
+        min-height: 36px;
+        border: none;
+      }
+      mat-cell,
+      mat-header-cell {
+        font-size: 12px;
+        padding: 0;
+      }
+
+      mat-header-row > mat-header-cell:last-of-type,
+      mat-row > mat-cell:last-of-type {
+        margin-left: auto;
+      }
+      mat-header-row > mat-header-cell:not(:first-of-type),
+      mat-row > mat-cell:not(:first-of-type) {
+        justify-content: flex-end;
+      }
+    }
+  }
+}

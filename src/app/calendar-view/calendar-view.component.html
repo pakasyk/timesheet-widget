@@ -1,0 +1,8 @@
+<div class="calendar-view">
+    <div class="day" *ngFor="let day of service.week; let i = index" (click)="service.selectDay(i)"  [class.selected]="i === (service.selectedDay$ | async)" [class.weekend]="day.date.getDay() === 6 || day.date.getDay() === 0">
+        <span>{{day.date |  date:'EEE'}}</span>
+        <span>{{day.date | date:'d'}}</span>
+        <span>{{hoursWorked(day) }}</span>
+        <mat-icon [style.color]="approvalState(day)" *ngIf="day.events?.length">fiber_manual_record</mat-icon>       
+    </div>
+</div>

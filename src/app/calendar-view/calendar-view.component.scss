@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+.calendar-view {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.day {
+  cursor: pointer;
+  span {
+    display: block;
+    text-align: center;
+    
+
+    &:first-of-type {
+      font-size: 12px;
+      margin-bottom: 1em;
+    }
+
+    &:nth-of-type(2) {
+      font-size: 16px;
+      line-height: 36px;
+      font-weight: bold;
+      width: 36px;
+      height: 36px;
+      margin: 0 auto;
+      border: 1px solid transparent;
+      margin-bottom: .5em;
+    }
+    &:nth-of-type(3) {
+        font-size: 12px;
+        margin-bottom: 1em;
+    }
+  }
+  mat-icon {
+      font-size: 6px;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+  }
+  &.selected {     
+    span:nth-of-type(2) {
+      background-color: #f08900;
+      color: #fff;
+    }
+  }
+
+  &:hover {
+    span:nth-of-type(2) {
+      border: 1px solid #f08900;
+    }
+  }
+
+  &.weekend {
+    color: RGB(0, 0, 0, 0.6);
+  }
+}

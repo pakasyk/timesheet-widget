@@ -1,0 +1,111 @@
+<mat-card class="example-card" *ngIf="groupedEvents?.Hours">
+  <mat-card-header>
+    <mat-icon mat-card-avatar>schedule</mat-icon>
+    <mat-card-title>Hours</mat-card-title>
+    <span>({{ getTaskStart(groupedEvents.Hours) | date: "HH:mm" }} - {{ getTaskEnd(groupedEvents.Hours) | date: "HH:mm" }})</span>
+  </mat-card-header>
+
+  <mat-card-content>
+    <mat-table [dataSource]="groupedEvents.Hours">
+      <ng-container matColumnDef="eventType">
+        <mat-header-cell *matHeaderCellDef [style.flex]="2"
+          >Type</mat-header-cell
+        >
+        <mat-cell *matCellDef="let element" [style.flex]="2">{{
+          element.eventType
+        }}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="duration">
+        <mat-header-cell mat-header-cell *matHeaderCellDef
+          >Duration</mat-header-cell
+        >
+        <mat-cell *matCellDef="let element">
+          {{ hoursWorked(element.firstTaskStart, element.lastTaskEnd) }}
+        </mat-cell>
+      </ng-container>
+      <mat-header-row
+        *matHeaderRowDef="['eventType', 'duration']"
+      ></mat-header-row>
+      <mat-row
+        *matRowDef="let row; columns: ['eventType', 'duration']"
+      ></mat-row>
+    </mat-table>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="example-card" *ngIf="groupedEvents?.Expenses">
+  <mat-card-header>
+    <mat-icon mat-card-avatar>attach_money</mat-icon>
+    <mat-card-title>Expenses</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <mat-table [dataSource]="groupedEvents.Expenses">
+      <ng-container matColumnDef="eventType">
+        <mat-header-cell *matHeaderCellDef [style.flex]="2"
+          >Type</mat-header-cell
+        >
+        <mat-cell *matCellDef="let element" [style.flex]="2">{{
+          element.eventType
+        }}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="quantity">
+        <mat-header-cell mat-header-cell *matHeaderCellDef
+          >Quantity</mat-header-cell
+        >
+        <mat-cell *matCellDef="let element">{{ element.quantity }}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="total">
+        <mat-header-cell mat-header-cell *matHeaderCellDef
+          >Total</mat-header-cell
+        >
+        <mat-cell *matCellDef="let element">
+          {{ element.quantity * element.price | currency }}
+        </mat-cell>
+      </ng-container>
+      <mat-header-row
+        *matHeaderRowDef="['eventType', 'quantity', 'total']"
+      ></mat-header-row>
+      <mat-row
+        *matRowDef="let row; columns: ['eventType', 'quantity', 'total']"
+      ></mat-row>
+    </mat-table>
+  </mat-card-content>
+</mat-card>
+
+<mat-card
+  class="example-card"
+  *ngIf="groupedEvents && groupedEvents['Additional hours']"
+>
+  <mat-card-header>
+    <mat-icon mat-card-avatar>history</mat-icon>
+    <mat-card-title>Additional hours</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <mat-table [dataSource]="groupedEvents['Additional hours']">
+      <ng-container matColumnDef="eventType">
+        <mat-header-cell *matHeaderCellDef [style.flex]="2"
+          >Type</mat-header-cell
+        >
+        <mat-cell *matCellDef="let element" [style.flex]="2">{{
+          element.eventType
+        }}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="total">
+        <mat-header-cell mat-header-cell *matHeaderCellDef
+          >Duration</mat-header-cell
+        >
+        <mat-cell *matCellDef="let element">
+          {{ hoursWorked(element.firstTaskStart, element.lastTaskEnd) }}
+        </mat-cell>
+      </ng-container>
+      <mat-header-row
+        *matHeaderRowDef="['eventType', 'total']"
+      ></mat-header-row>
+      <mat-row *matRowDef="let row; columns: ['eventType', 'total']"></mat-row>
+    </mat-table>
+  </mat-card-content>
+</mat-card>
